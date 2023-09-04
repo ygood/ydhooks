@@ -1,0 +1,17 @@
+const del = require('del');
+const babel = require('gulp-babel');
+const ts = require('gulp-typescript');
+const gulp = require('gulp');
+
+gulp.task('clean', async () => {
+  await del('es/**');
+  await del('lib/**');
+  await del('cjs/**');
+});
+
+gulp.task('es', () => {
+  const tsProject = ts.createProject('tsconfig.pro.json', {
+    module: 'ESNext',
+  });
+  return tsProject.src().pipe(tsProject()).pipe(babel()).pipe(gulp.dest('es/'));
+});

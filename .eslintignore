@@ -8,3 +8,4 @@ node_modules/
 **/*-min.js
 **/*.bundle.js
 tsconfig.json
+gulpfile.js

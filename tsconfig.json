@@ -1,7 +1,9 @@
 {
+  "root": true,
   "compilerOptions": {
     "target": "ES5",
     "moduleResolution": "node",
+    "lib": ["ESNext", "dom"],
     "jsx": "react",
     "esModuleInterop": true,
     "downlevelIteration": true,
@@ -12,10 +14,8 @@
     },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "declaration": false,
     "strictNullChecks": true,
     "importHelpers": true
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "packages/"],
   "exclude": ["node_modules", "lib", "es", "dist", "example"]
 }
