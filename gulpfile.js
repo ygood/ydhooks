@@ -9,9 +9,30 @@ gulp.task('clean', async () => {
   await del('cjs/**');
 });
 
+gulp.task('cjs', () => {
+  return gulp
+    .src(['./es/**/*.js'])
+    .pipe(
+      babel({
+        configFile: '../../.babelrc',
+      }),
+    )
+    .pipe(gulp.dest('lib/'));
+});
+
 gulp.task('es', () => {
   const tsProject = ts.createProject('tsconfig.pro.json', {
     module: 'ESNext',
   });
   return tsProject.src().pipe(tsProject()).pipe(babel()).pipe(gulp.dest('es/'));
 });
+
+gulp.task('declaration', function () {
+  const tsProject = ts.createProject('tsconfig.pro.json', {
+    declaration: true,
+    emitDeclarationOnly: true,
+  });
+  return tsProject.src().pipe(tsProject()).pipe(gulp.dest('es/')).pipe(gulp.dest('lib/'));
+});
+
+exports.default = gulp.series('clean', 'es', 'cjs', 'declaration');

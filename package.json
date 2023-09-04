@@ -7,6 +7,8 @@
     "prepare": "husky install",
     "build": "pnpm -r --filter=./packages/* run build",
     "docs:dev": "dumi dev",
+    "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
+    "clean": "pnpm run clean-dist && rimraf node_modules",
     "mlp-lint-scan": "mlp-lint scan -i docs/",
     "mlp-lint-fix": "mlp-lint fix -i packages/"
   },
@@ -15,10 +17,15 @@
   "license": "ISC",
   "devDependencies": {
     "@ant-design/icons": "^5.2.6",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/plugin-transform-runtime": "^7.22.10",
+    "@babel/preset-env": "^7.22.14",
+    "@babel/preset-react": "^7.22.5",
     "@mlpconfig/commitlint-config": "^2.0.0",
     "antd": "^5.8.6",
     "babel-plugin-import": "^1.13.8",
-    "del": "^7.1.0",
+    "del": "5.1.0",
     "dumi": "2.2.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
@@ -28,6 +35,7 @@
     "mlp-lint": "^2.0.0",
     "mlp-markdownlint-config": "^2.0.0",
     "mlp-stylelint-config": "^2.0.0",
+    "react": "^18.2.0",
     "rimraf": "^3.0.2",
     "typescript": "5.1.6"
   },
