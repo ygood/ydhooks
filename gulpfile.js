@@ -6,7 +6,7 @@ const gulp = require('gulp');
 gulp.task('clean', async () => {
   await del('es/**');
   await del('lib/**');
-  await del('cjs/**');
+  await del('dist/**');
 });
 
 gulp.task('cjs', () => {

@@ -8,7 +8,7 @@ module.exports = merge(common, {
     library: {
       name: 'yd_hooks',
     },
-    filename: 'bundle.js',
+    filename: 'yd-hooks.js',
     path: path.resolve(__dirname, './dist'),
   },
 });

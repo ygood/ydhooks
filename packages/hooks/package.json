@@ -2,7 +2,10 @@
   "name": "hooks",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "unpkg": "dist/yd-hooks.js",
   "scripts": {
     "build": "gulp && webpack"
   },
