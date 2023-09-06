@@ -9,8 +9,8 @@
     "docs:dev": "dumi dev",
     "clean-dist": "rimraf 'packages/hooks/{lib,es,node_modules,dist}'",
     "clean": "pnpm run clean-dist && rimraf node_modules",
-    "mlp-lint-scan": "mlp-lint scan -i docs/",
-    "mlp-lint-fix": "mlp-lint fix -i packages/"
+    "mlp-lint-scan": "mlp-lint scan -i packages/hooks/src",
+    "mlp-lint-fix": "mlp-lint fix -i packages/hooks/src"
   },
   "keywords": [],
   "author": "",

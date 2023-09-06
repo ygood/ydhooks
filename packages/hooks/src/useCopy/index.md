@@ -1,23 +1,21 @@
 ---
 nav:
+  path: /hooks
 ---
 
 # useCopy
 
-复制hooks,使用于文档复制
+用于文本复制功能，依赖于 `copy-to-clipboard` 包
 
 ## 代码演示
 
 ### 基础用法
 
+<code hideActions='["CSB"]' src="./demo/demo1.tsx"></code>
+
 ## API
 
 ```typescript
-useMount(fn: () => void);
+type CopyTextProp = string | undefined;
+const [text, copy] = useCopy() :[CopyTextProp, (value: number | string) => void];
 ```
-
-### 参数
-
-| 参数 | 说明               | 类型         | 默认值 |
-| ---- | ------------------ | ------------ | ------ |
-| fn   | 初始化时执行的函数 | `() => void` | -      |
