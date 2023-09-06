@@ -1,5 +1,5 @@
 {
-  "name": "hooks",
+  "name": "yd-hooks",
   "version": "0.0.1",
   "description": "",
   "main": "./lib/index.js",
@@ -10,6 +10,9 @@
     "build": "gulp && webpack"
   },
   "devDependencies": {},
+  "dependencies": {
+    "copy-to-clipboard": "^3.3.3"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"

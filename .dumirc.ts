@@ -1,21 +1,21 @@
 import { defineConfig } from 'dumi';
+import { menus } from './hook_menus';
 
 export default defineConfig({
   themeConfig: {
     name: 'yd-hooks',
+    nav: [
+      { title: '指南', link: '/guide' },
+      { title: 'Hooks', link: '/hooks/use-copy', activePath: '/hooks' },
+    ],
     sidebar: {
       '/guide': [
         {
           title: '向导',
-          children: [{ title: '向导', link: 'guide' }],
+          children: [{ title: '', link: 'guide' }],
         },
       ],
-      '/hooks': [
-        {
-          title: '向导',
-          children: [{ title: '向导', link: 'guide' }],
-        },
-      ],
+      '/hooks': menus,
     },
     footer: 'Copyright © 2023 | Powered by yanlei',
     socialLinks: {
@@ -23,7 +23,8 @@ export default defineConfig({
     },
   },
   resolve: {
-    docDirs: ['docs', 'packages/hooks'],
+    docDirs: ['docs'], // 2.0 默认值
+    atomDirs: [{ type: 'hooks', dir: 'packages/hooks/src' }], // 2.0 默认值
   },
   extraBabelPlugins: [
     [
@@ -36,6 +37,9 @@ export default defineConfig({
       'antd',
     ],
   ],
+  alias: {
+    ['yd-hooks']: process.cwd() + '/packages/hooks/src/index.ts',
+  },
   publicPath: '/ydhooks/',
   base: '/ydhooks/',
 });

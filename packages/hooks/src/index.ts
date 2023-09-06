@@ -1,7 +1,5 @@
-import { Person } from './type';
+import useCopy from './useCopy';
+import useLatest from './useLatest';
+import useUnMoment from './useUnMount';
 
-const getname = (): Person => {
-  return { name: 'tom', age: 18 };
-};
-
-export default getname;
+export { useCopy, useLatest, useUnMoment };

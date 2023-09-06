@@ -10,7 +10,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@@/*": [".dumi/tmp/*"],
+      "yd-hooks": ["./packages/hooks/src/index.ts"]
     },
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
