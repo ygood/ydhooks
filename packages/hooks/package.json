@@ -7,7 +7,8 @@
   "types": "./lib/index.d.ts",
   "unpkg": "dist/yd-hooks.js",
   "scripts": {
-    "build": "gulp && webpack"
+    "build": "gulp && webpack",
+    "test": "jest"
   },
   "devDependencies": {},
   "dependencies": {
