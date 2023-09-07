@@ -14,6 +14,7 @@
     "clean": "pnpm run clean-dist && rimraf node_modules",
     "mlp-lint-scan": "mlp-lint scan -i packages/hooks/src",
     "mlp-lint-fix": "mlp-lint fix -i packages/hooks/src",
+    "pub": "pnpm run build && pnpm -r --filter=./packages/* publish",
     "test": "pnpm -r --filter=./packages/* run test"
   },
   "keywords": [],

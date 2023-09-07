@@ -1,7 +1,7 @@
 {
   "name": "yd-hooks",
   "version": "0.0.1",
-  "description": "",
+  "description": "yd 业务hooks",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "types": "./lib/index.d.ts",
@@ -10,11 +10,28 @@
     "build": "gulp && webpack",
     "test": "jest"
   },
+  "files": [
+    "lib",
+    "es",
+    "dist",
+    "package.json"
+  ],
   "devDependencies": {},
   "dependencies": {
     "copy-to-clipboard": "^3.3.3"
   },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": "https://github.com/ygood/ydhooks",
+  "homepage": "https://github.com/ygood/ydhooks",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": ">=v16.14.2"
+  },
+  "license": "MIT"
 }
