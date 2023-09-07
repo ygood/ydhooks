@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react';
 // eslint-disable-next-line import/no-cycle
-import { useLatest } from 'yd-hooks';
+import useLatest from '../useLatest';
 
 type noop = (...args: any[]) => any;
 

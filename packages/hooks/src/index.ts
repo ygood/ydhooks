@@ -6,5 +6,6 @@ import useMoment from './useMoment';
 import useDebounceFn from './useDebounceFn';
 // eslint-disable-next-line import/no-cycle
 import useThrottleFn from './useThrottleFn';
+import useToggle from './useToggle';
 
-export { useCopy, useLatest, useUnMoment, useDebounceFn, useThrottleFn, useMoment };
+export { useCopy, useLatest, useUnMoment, useDebounceFn, useThrottleFn, useMoment, useToggle };

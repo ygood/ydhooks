@@ -7,8 +7,14 @@ const screenfullMethods = [
   'fullscreenEnabled',
   'fullscreenchange',
   'fullscreenerror',
+  'prompt'
 ];
 screenfullMethods.forEach((item) => {
+  if (item === 'prompt') {
+    // 跳过prompt方法，防止测试报错
+    window['prompt'] = () => {};
+    return
+  }
   document[item] = () => {};
   HTMLElement.prototype[item] = () => {};
 });

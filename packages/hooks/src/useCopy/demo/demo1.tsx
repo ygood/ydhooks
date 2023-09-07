@@ -3,9 +3,10 @@ import { useCopy } from 'yd-hooks';
 import { Button, Input } from 'antd';
 
 export default () => {
-  const [, copy] = useCopy();
+  const [text, copy] = useCopy();
   return (
     <>
+      <p>{text}</p>
       <p>
         <Input />
       </p>
