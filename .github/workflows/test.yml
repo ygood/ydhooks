@@ -1,0 +1,14 @@
+name: yd-hooks test
+run-name: ${{ github.actor }} is testing yd-hooks 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v16.14.2
+      - run: npm install -g pnpm
+      - run: pnpm install
+      - run: pnpm test
