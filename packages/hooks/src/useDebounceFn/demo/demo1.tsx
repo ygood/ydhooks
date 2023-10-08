@@ -4,8 +4,8 @@ import { Button } from 'antd';
 
 export default () => {
   const [count, setCount] = useState<number>(1);
-  const change = () => {
-    setCount((c) => c + 1);
+  const change = (num: number) => {
+    setCount((c) => c + num);
   };
   const cb = useDebounceFn(change);
 
@@ -15,7 +15,7 @@ export default () => {
       <p>
         <Button
           onClick={() => {
-            cb();
+            cb(5);
           }}
         >
           加一

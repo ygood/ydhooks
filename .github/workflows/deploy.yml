@@ -1,0 +1,14 @@
+name: yd-hooks deploy docs
+run-name: ${{ github.actor }} is deploy yd-hooks docs 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v16.14.2
+      - run: npm install -g pnpm
+      - run: pnpm install
+      - run: pnpm docs:deploy

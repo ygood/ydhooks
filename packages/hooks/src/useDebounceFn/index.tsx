@@ -11,15 +11,18 @@ const useDebounceFn = <T extends noop>(fn: T, wait = 500) => {
   useUnMoment(() => {
     clearInterval(timerRef.current);
   });
-  const cb = useCallback(() => {
-    if (timerRef.current) {
-      clearInterval(timerRef.current);
-    }
-    timerRef.current = setTimeout(() => {
-      fnRef.current();
-      clearInterval(timerRef.current);
-    }, wait);
-  }, [fnRef, wait]);
+  const cb = useCallback(
+    (...args) => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+      timerRef.current = setTimeout(() => {
+        fnRef.current(...args);
+        clearInterval(timerRef.current);
+      }, wait);
+    },
+    [fnRef, wait],
+  );
   return cb;
 };
 

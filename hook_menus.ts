@@ -9,6 +9,7 @@ export const menus = [
       { title: 'useThrottleFn', link: '/hooks/use-throttle-fn' },
       { title: 'useMoment', link: '/hooks/use-moment' },
       { title: 'useToggle', link: '/hooks/use-toggle' },
+      { title: 'useTitle', link: '/hooks/use-title' },
     ],
   },
 ];
