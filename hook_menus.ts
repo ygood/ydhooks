@@ -10,6 +10,7 @@ export const menus = [
       { title: 'useMoment', link: '/hooks/use-moment' },
       { title: 'useToggle', link: '/hooks/use-toggle' },
       { title: 'useTitle', link: '/hooks/use-title' },
+      { title: 'useCounter', link: '/hooks/use-counter' },
     ],
   },
 ];

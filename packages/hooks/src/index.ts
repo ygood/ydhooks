@@ -8,6 +8,7 @@ import useDebounceFn from './useDebounceFn';
 import useThrottleFn from './useThrottleFn';
 import useToggle from './useToggle';
 import useTitle from './useTitle';
+import useCounter from './useCounter';
 
 export {
   useCopy,
@@ -18,4 +19,5 @@ export {
   useMoment,
   useToggle,
   useTitle,
+  useCounter,
 };
