@@ -9,6 +9,7 @@ import useThrottleFn from './useThrottleFn';
 import useToggle from './useToggle';
 import useTitle from './useTitle';
 import useCounter from './useCounter';
+import useInterval from './useInterval';
 
 export {
   useCopy,
@@ -20,4 +21,5 @@ export {
   useToggle,
   useTitle,
   useCounter,
+  useInterval,
 };

@@ -11,6 +11,7 @@ export const menus = [
       { title: 'useToggle', link: '/hooks/use-toggle' },
       { title: 'useTitle', link: '/hooks/use-title' },
       { title: 'useCounter', link: '/hooks/use-counter' },
+      { title: 'useInterval', link: '/hooks/use-interval' },
     ],
   },
 ];
