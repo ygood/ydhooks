@@ -12,6 +12,7 @@ export const menus = [
       { title: 'useTitle', link: '/hooks/use-title' },
       { title: 'useCounter', link: '/hooks/use-counter' },
       { title: 'useInterval', link: '/hooks/use-interval' },
+      { title: 'useTimeout', link: '/hooks/use-timeout' },
     ],
   },
 ];

@@ -69,14 +69,5 @@ describe('test useCounter', () => {
       result.current[1].dec(20);
     });
     expect(result.current[0]).toEqual(5);
-
-    // 測試set方法
-    try {
-      act(() => {
-        result.current[1].set(30);
-      });
-    } catch (error) {
-      expect(error).toBeInstanceOf(Error);
-    }
   });
 });

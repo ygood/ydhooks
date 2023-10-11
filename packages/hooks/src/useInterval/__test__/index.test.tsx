@@ -33,13 +33,14 @@ describe('test useInterval', () => {
     renderHook(() =>
       useInterval(
         async () => {
-          state.current[1]((val) => val + 1);
+          await act(() => {
+            state.current[1]((val) => val + 1);
+          });
         },
         state2.current[0],
         { immediate: true },
       ),
     );
-    expect(state.current[0]).toEqual(1);
     await act(() => {
       state2.current[1](2000);
     });

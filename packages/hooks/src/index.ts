@@ -10,6 +10,7 @@ import useToggle from './useToggle';
 import useTitle from './useTitle';
 import useCounter from './useCounter';
 import useInterval from './useInterval';
+import useTimeout from './useTimeout';
 
 export {
   useCopy,
@@ -22,4 +23,5 @@ export {
   useTitle,
   useCounter,
   useInterval,
+  useTimeout,
 };
