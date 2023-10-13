@@ -13,6 +13,8 @@ export const menus = [
       { title: 'useCounter', link: '/hooks/use-counter' },
       { title: 'useInterval', link: '/hooks/use-interval' },
       { title: 'useTimeout', link: '/hooks/use-timeout' },
+      { title: 'useLocalStorageState', link: '/hooks/use-local-storage-state' },
+      { title: 'useSessionStorageState', link: '/hooks/use-session-storage-state' },
     ],
   },
 ];

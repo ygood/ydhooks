@@ -11,6 +11,8 @@ import useTitle from './useTitle';
 import useCounter from './useCounter';
 import useInterval from './useInterval';
 import useTimeout from './useTimeout';
+import useLocalStorageState from './useLocalStorageState';
+import useSessionStorageState from './useSessionStorageState';
 
 export {
   useCopy,
@@ -24,4 +26,6 @@ export {
   useCounter,
   useInterval,
   useTimeout,
+  useLocalStorageState,
+  useSessionStorageState,
 };
