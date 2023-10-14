@@ -13,6 +13,7 @@ import useInterval from './useInterval';
 import useTimeout from './useTimeout';
 import useLocalStorageState from './useLocalStorageState';
 import useSessionStorageState from './useSessionStorageState';
+import useEventListener from './useEventListener';
 
 export {
   useCopy,
@@ -28,4 +29,5 @@ export {
   useTimeout,
   useLocalStorageState,
   useSessionStorageState,
+  useEventListener,
 };
