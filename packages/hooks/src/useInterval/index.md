@@ -27,7 +27,7 @@ const clear = useInterval(fn, delay, { immediate: true });
 
 | 参数      | 说明                 | 类型       | 默认值 |
 | --------- | -------------------- | ---------- | ------ |
-| fn        | 需要指向的函数       | () => void | -      |
+| fn        | 需要执行的函数       | () => void | -      |
 | delay     | 执行间隔时间         | number     | 1000   |
 | immediate | 首次进入是否需要执行 | boolean    | false  |
 

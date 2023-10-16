@@ -14,6 +14,7 @@ import useTimeout from './useTimeout';
 import useLocalStorageState from './useLocalStorageState';
 import useSessionStorageState from './useSessionStorageState';
 import useEventListener from './useEventListener';
+import useLockFn from './useLockFn';
 
 export {
   useCopy,
@@ -30,4 +31,5 @@ export {
   useLocalStorageState,
   useSessionStorageState,
   useEventListener,
+  useLockFn,
 };

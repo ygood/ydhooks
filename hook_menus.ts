@@ -16,6 +16,7 @@ export const menus = [
       { title: 'useLocalStorageState', link: '/hooks/use-local-storage-state' },
       { title: 'useSessionStorageState', link: '/hooks/use-session-storage-state' },
       { title: 'useEventListener', link: '/hooks/use-event-listener' },
+      { title: 'useLockFn', link: '/hooks/use-lock-fn' },
     ],
   },
 ];
