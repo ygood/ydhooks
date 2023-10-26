@@ -122,6 +122,9 @@ importers:
       react:
         specifier: ^18.0.0
         version: 18.2.0
+      resize-observer-polyfill:
+        specifier: ^1.5.1
+        version: 1.5.1
 
 packages:
 
@@ -15894,7 +15897,6 @@ packages:
 
   /resize-observer-polyfill@1.5.1:
     resolution: {integrity: sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==}
-    dev: true
 
   /resolve-cwd@3.0.0:
     resolution: {integrity: sha512-OrZaX2Mb+rJCpH/6CpSqt9xFVpN++x01XnN2ie9g6P5/3xelLAkXWVADpdz1IHD/KFfEXyE6V0U01OQ3UO2rEg==}

@@ -15,6 +15,7 @@ import useLocalStorageState from './useLocalStorageState';
 import useSessionStorageState from './useSessionStorageState';
 import useEventListener from './useEventListener';
 import useLockFn from './useLockFn';
+import useSize from './useSize';
 
 export {
   useCopy,
@@ -32,4 +33,5 @@ export {
   useSessionStorageState,
   useEventListener,
   useLockFn,
+  useSize,
 };

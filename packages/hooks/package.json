@@ -18,7 +18,8 @@
   ],
   "devDependencies": {},
   "dependencies": {
-    "copy-to-clipboard": "^3.3.3"
+    "copy-to-clipboard": "^3.3.3",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
     "react": "^18.0.0"
